@@ -14,5 +14,6 @@
 -(UIQuery *)setValue:(NSString *)value forElementWithId:(NSString *)elementId;
 -(UIQuery *)clickElementWithId:(NSString *)elementId;
 -(NSString *)html;
+-(NSString *) evaluateJavascript:(NSString *)javascript;
 
 @end
