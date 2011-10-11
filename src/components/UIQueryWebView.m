@@ -1,4 +1,3 @@
-
 #import "UIQueryWebView.h"
 
 @implementation UIQueryWebView
@@ -49,4 +48,10 @@
 	return [self stringByEvaluatingJavaScriptFromString: @"document.body.innerHTML"];
 }
 
+-(NSString *) evaluateJavascript:(NSString *)javascript {
+    
+    NSString *result = [self stringByEvaluatingJavaScriptFromString: javascript];
+    
+	return result;
+}
 @end
